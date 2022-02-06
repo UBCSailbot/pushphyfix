@@ -1,0 +1,9 @@
+[submodule "assets/bbbphyfix"]
+	path = assets/bbbphyfix
+	url = https://github.com/bigjosh/bbbphyfix
+[submodule "assets/bbbrtc"]
+	path = assets/bbbrtc
+	url = https://github.com/bigjosh/bbbrtc
+[submodule "assets/phyreg"]
+	path = assets/phyreg
+	url = https://github.com/bigjosh/phyreg
