@@ -9,9 +9,3 @@ fi
 
 rsync -e "ssh -o StrictHostKeyChecking=no" -r assets/* debian@$1:/home/debian/phyfixassets/
 
-ssh -o StrictHostKeyChecking=no debian@$1 "pushd phyfixassets; ./makeall.sh;  pushd bbbphyfix/; ./install.sh; sync; popd; popd"
-
-
-
-
-

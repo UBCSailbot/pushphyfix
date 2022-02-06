@@ -5,7 +5,4 @@ popd
 pushd bbbrtc
 make
 popd
-pushd bbbphyfix
-./install
-popd
 
