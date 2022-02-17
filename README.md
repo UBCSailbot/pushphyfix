@@ -1,8 +1,30 @@
 # pushphyfix
-Pushes the bbbphyfix to machines that are not connected to the internet 
+Pushes the bbbphyfix to machines that are not connected to the internet
 
-To push the fix to a machine:
+## Instructions
 
-`./push.sh dest`
+1. Clone this repository and its submodules
 
-...where `dest` is the hostname or IP address of the machine to load the fix on.
+    ```
+    git clone --recurse-submodules https://github.com/UBCSailbot/pushphyfix.git
+    ```
+
+2. Push the fix to the BBB
+
+    ```
+    cd pushphyfix
+    ./push.sh <dest>
+    ```
+
+    - `<dest>` is the IP address of the BBB
+
+3. Run the following commands on the BBB
+
+    ```
+    sudo su
+    cd ~/pushphyfix/assets
+    ./makeall.sh
+    cd bbbphyfix
+    ./install.sh
+    sync
+    ```
